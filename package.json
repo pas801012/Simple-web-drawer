@@ -1,0 +1,21 @@
+{
+  "name": "canvas-drawer-exmpl",
+  "version": "1.0.0",
+  "description": "Simplest web drawer example",
+  "main": "index.html",
+  "scripts": {
+    "build": "echo \"no build required\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codesandbox-app/static-template.git"
+  },
+  "keywords": [],
+  "author": "Ives van Hoorne",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codesandbox-app/static-template/issues"
+  },
+  "homepage": "https://github.com/codesandbox-app/static-template#readme",
+  "dependencies": {}
+}
