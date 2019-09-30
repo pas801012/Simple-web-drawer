@@ -9,6 +9,9 @@ canvas.style.border = '2px dashed red';
 
 var paint;
 
+var addClick = function() {};
+var redraw = function() {};
+
 var onMouseDown = function(e) {
   var mouseX = e.pageX - this.offsetLeft;
   var mouseY = e.pageY - this.offsetTop;
@@ -24,9 +27,13 @@ var onMouseMove = function(e) {
     redraw();
   }
 };
+
 var onMouseUp = function(e) {
   paint = false;
 };
+
+var onMouseLeave = function(e) {};
+
 canvas.addEventListener('mousedown', onMouseDown);
 canvas.addEventListener('mousemove', onMouseMove);
 canvas.addEventListener('mouseup', onMouseUp);
