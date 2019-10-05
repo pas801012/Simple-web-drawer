@@ -4,6 +4,7 @@
 
 var canvas = document.getElementById('canvasInAPerfectWorld');
 var context = canvas.getContext('2d');
+var clearButton = document.getElementById('clear-frame');
 
 canvas.style.border = '2px dashed red';
 
@@ -11,6 +12,13 @@ var clickX = [];
 var clickY = [];
 var clickDrag = [];
 var paint;
+
+var onClearFrame = function() {
+  clickX.length = 0;
+  clickY.length = 0;
+  clickDrag.length = 0;
+  redraw();
+};
 
 var addClick = function(x, y, dragging) {
   clickX.push(x);
@@ -64,6 +72,7 @@ var onMouseLeave = function(e) {
   // paint = false;
 };
 
+clearButton.addEventListener('click', onClearFrame);
 canvas.addEventListener('mousedown', onMouseDown);
 canvas.addEventListener('mousemove', onMouseMove);
 canvas.addEventListener('mouseup', onMouseUp);
